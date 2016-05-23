@@ -46,3 +46,25 @@ function wordCount(sentence){
 	return words.length
 }
 wordCount("this is a sentence")
+
+//primetime
+function primeTime(number){
+	if (number > 0 && number < 4){
+		console.log('true')
+		return true
+	}
+	for(var i =2 ; i <= Math.sqrt(number); i++){
+		if ((number % i) == 0) {
+			console.log('false')
+			return false
+		}
+		else{console.log('true')
+			return true}
+	}
+}
+// primeTime(1)
+// primeTime(5)
+// primeTime(73)
+// primeTime(32769)
+
+
