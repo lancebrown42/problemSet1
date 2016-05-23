@@ -1,7 +1,8 @@
 // var string = prompt("Write a sentence.")
-var capSentence = []
+
 
 function letterCapitalize(sentence){
+	var capSentence = []
 	capSentence[0] = sentence[0].toUpperCase()
 	for (var i = 1; i < sentence.length; i++) {
 		// console.log(sentence.indexOf(" ",i))
@@ -36,4 +37,12 @@ function letterCapitalizeBetter(sentence){
 	console.log(string)
 	return string
 }
-letterCapitalizeBetter("this is a sentence")
+// letterCapitalizeBetter("this is a sentence")
+
+//wordcount
+
+function wordCount(sentence){
+	var words = sentence.split(" ")
+	return words.length
+}
+wordCount("this is a sentence")
